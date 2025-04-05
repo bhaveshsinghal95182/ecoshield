@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.7.1",
+  "dependencies": {
+    "@langchain/community": "^0.3.39",
+    "@langchain/core": "^0.3.43",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "duck-duck-scrape": "^2.2.7",
+    "express": "^5.1.0"
+  }
+}
