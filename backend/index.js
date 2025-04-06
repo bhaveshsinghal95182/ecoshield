@@ -5,23 +5,13 @@ const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const allowedOrigins = ['https://ecoshield-three.vercel.app'];
 
 app.use(cors({
-    origin: function (origin, callback) {
-      if (!origin || allowedOrigins.includes(origin)) {
-        callback(null, true);
-      } else {
-        callback(new Error("Not allowed by CORS"));
-      }
-    },
+    origin: "https://ecoshield-three.vercel.app"
   }));
 
 // app.use(cors())
 
-// Middleware
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
 
 // Create DuckDuckGo search tool
 const duckDuckGoTool = new DuckDuckGoSearch({ maxResults: 5 });
