@@ -5,7 +5,7 @@ const cors = require('cors');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-const allowedOrigins = process.env.ALLOWED_ORIGINS?.split(",") || [];
+const allowedOrigins = ['https://ecoshield-three.vercel.app'];
 
 app.use(cors({
     origin: function (origin, callback) {
