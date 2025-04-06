@@ -63,7 +63,7 @@ export default function Home() {
           try {
             const backendurl = process.env.NEXT_PUBLIC_BACKEND_URL;
             // Use the Express API instead of direct DuckDuckGo tool
-            const response = await fetch(`${backendurl}/search`, {
+            const response = await fetch(`https://ecoshield-1.onrender.com/search`, {
               method: "POST",
               headers: {
                 "Content-Type": "application/json",
